@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Bai1
 {
-    public partial class Form1 : Form
+    public partial class Bai1Form : Form
     {
-        public Form1()
+        public Bai1Form()
         {
             InitializeComponent();
         }

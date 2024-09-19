@@ -1,6 +1,6 @@
 ﻿namespace Bai1
 {
-    partial class Form1
+    partial class Bai1Form
     {
         /// <summary>
         /// Required designer variable.
