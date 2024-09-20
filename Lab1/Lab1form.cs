@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bai1;
 using Bai2;
+using Bai3;
 
 namespace Lab1
 {
@@ -34,6 +35,12 @@ namespace Lab1
         {
             Bai2Form newBai2Form = new Bai2Form();
             newBai2Form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Bai3Form newBai3Form = new Bai3Form();
+            newBai3Form.Show();
         }
     }
 }
