@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Bai3
 {
-    public partial class Form1 : Form
+    public partial class Bai3Form : Form
     {
-        public Form1()
+        public Bai3Form()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
