@@ -57,7 +57,7 @@ namespace Bai1
                 sum = num1 + num2;
                 textBox2.Text = sum.ToString();
             }
-            catch (FormatException ex)
+            catch (FormatException)
             {
                 MessageBox.Show("Vui lòng nhập số nguyên (-_-')");
             }
