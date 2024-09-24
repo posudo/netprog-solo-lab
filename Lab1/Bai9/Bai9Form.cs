@@ -38,7 +38,8 @@ namespace Bai9
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
+            int chon_mon = new Random().Next(0, Foods.Count);
+            textBox2.Text = Foods[chon_mon];
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,6 +71,11 @@ namespace Bai9
         private void Bai9Form_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
