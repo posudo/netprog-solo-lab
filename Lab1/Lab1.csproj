@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Bai5\Bai5.csproj">
+      <Project>{def0960c-54b1-45f3-9393-de3b1180f189}</Project>
+      <Name>Bai5</Name>
+    </ProjectReference>
     <ProjectReference Include="Bai1\Bai1.csproj">
       <Project>{9bfe44d0-9ade-4b44-afc8-8a2272471f66}</Project>
       <Name>Bai1</Name>
