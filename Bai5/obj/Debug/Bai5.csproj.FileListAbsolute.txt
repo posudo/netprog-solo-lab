@@ -1,0 +1,10 @@
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\bin\Debug\Bai5.exe.config
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\bin\Debug\Bai5.exe
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\bin\Debug\Bai5.pdb
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\obj\Debug\Bai5.csproj.AssemblyReference.cache
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\obj\Debug\Bai5.Bai5Form.resources
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\obj\Debug\Bai5.Properties.Resources.resources
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\obj\Debug\Bai5.csproj.GenerateResource.cache
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\obj\Debug\Bai5.csproj.CoreCompileInputs.cache
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\obj\Debug\Bai5.exe
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Bai5\obj\Debug\Bai5.pdb
