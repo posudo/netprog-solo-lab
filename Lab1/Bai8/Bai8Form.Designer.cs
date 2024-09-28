@@ -87,7 +87,7 @@
             "Tính điểm trung bình",
             "Tìm môn điểm cao nhất, thấp nhất",
             "Tìm số môn đậu, không đậu",
-            "Xếp loại sinh viên "});
+            "Xếp loại sinh viên"});
             this.comboBox1.Location = new System.Drawing.Point(12, 69);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(390, 28);
