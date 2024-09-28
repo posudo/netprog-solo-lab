@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai9", "Bai9\Bai9.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai8", "Bai8\Bai8.csproj", "{339A2ABB-8C9C-4D39-A4E7-1159AA47CE25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai5", "..\Bai5\Bai5.csproj", "{DEF0960C-54B1-45F3-9393-DE3B1180F189}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai5", "Bai5\Bai5.csproj", "{DEF0960C-54B1-45F3-9393-DE3B1180F189}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
