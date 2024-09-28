@@ -100,6 +100,10 @@
       <Project>{e2c2c7f7-e877-42d6-a8a6-b6c55e0d9a99}</Project>
       <Name>Bai7</Name>
     </ProjectReference>
+    <ProjectReference Include="Bai8\Bai8.csproj">
+      <Project>{339a2abb-8c9c-4d39-a4e7-1159aa47ce25}</Project>
+      <Name>Bai8</Name>
+    </ProjectReference>
     <ProjectReference Include="Bai9\Bai9.csproj">
       <Project>{b0afa55c-bd75-4745-b062-121e62eb1353}</Project>
       <Name>Bai9</Name>

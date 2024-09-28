@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bài_8
+namespace Bai8
 {
     public partial class Bai8Form : Form
     {

@@ -13,6 +13,7 @@ using Bai3;
 using Bai6;
 using Bai7;
 using Bai9;
+using Bai8;
 
 namespace Lab1
 {
@@ -62,6 +63,12 @@ namespace Lab1
         {
             Bai9Form newBai9Form = new Bai9Form();
             newBai9Form.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Bai8Form newBai8Form = new Bai8Form();
+            newBai8Form.Show();
         }
     }
 }

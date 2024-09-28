@@ -1,4 +1,4 @@
-﻿namespace Bài_8
+﻿namespace Bai8
 {
     partial class Bai8Form
     {
