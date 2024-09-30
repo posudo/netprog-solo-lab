@@ -45,7 +45,7 @@ namespace Bai5
         }
         private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -62,9 +62,26 @@ namespace Bai5
         {
 
         }
-
+        private void ticket_uncheck(CheckedListBox a)
+        {
+            if (a.CheckedItems.Count == 0) return;
+            for (int i = 0; i < a.Items.Count; i++)
+            {
+                
+                a.SetItemCheckState(i, CheckState.Unchecked);
+            }
+        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ticket_uncheck(checkedListBox1);
+            ticket_uncheck(checkedListBox2);
+            ticket_uncheck(checkedListBox3);
+            ticket_uncheck(checkedListBox4);
+            ticket_uncheck(checkedListBox5);
+
+            TienVeTam = 0;
+            label15.Text = $"{TienVeTam}₫";
+
             comboBox2.Items.Clear();
 
             foreach (string phong_chieu in DuLieuPhim[comboBox1.SelectedItem.ToString()])
@@ -123,7 +140,7 @@ namespace Bai5
             else
             {
                 TienVeTam -= GiaVe[comboBox1.SelectedItem.ToString()] / 4;
-                VeDat.Add(checkedListBox5.Items[e.Index].ToString());
+                VeDat.Remove(checkedListBox5.Items[e.Index].ToString());
             }
             label15.Text = $"{TienVeTam}₫";
         }
@@ -247,7 +264,7 @@ namespace Bai5
                 $"Họ và tên: {textBox1.Text.ToString()}\r\n" +
                 $"Phim: {comboBox1.SelectedItem.ToString()}\r\n" +
                 $"Vé: {Ve}   Phòng chiếu: {comboBox2.SelectedItem.ToString()}\r\n" +
-                $"Thành tiền: {TienVeTam}₫");
+                $"Thành tiền: {TienVeTam}₫");   
         }
         private void checkedListBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
