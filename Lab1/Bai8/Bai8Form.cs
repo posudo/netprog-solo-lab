@@ -37,6 +37,12 @@ namespace Bai8
                 return;
             }
 
+            if (textBox1.Text.ToString() == "")
+            {
+                MessageBox.Show("Vui lòng nhập thông tin (-_-')");
+                return;
+            }
+
             string ThongTin = "";
             string userSelected = comboBox1.Text.ToString();
             string[] DuLieuSV = textBox1.Text.Split(',');
