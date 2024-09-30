@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Bai9
 {
@@ -44,6 +45,11 @@ namespace Bai9
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text.ToString() == "")
+            {
+                MessageBox.Show("Vui lòng nhập món ăn (-_-')");
+                return;
+            }
             Foods.Add(textBox1.Text);
             SaveFoodsList();
             ((BindingSource)listBox1.DataSource).ResetBindings(false);
