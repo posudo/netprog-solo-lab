@@ -30,12 +30,12 @@ namespace Bai2
 
         private void Tim_Click(object sender, EventArgs e)
         {
-            int num1, num2, num3, max_num, min_num;
+            float num1, num2, num3, max_num, min_num;
             try
             {
-                num1 = Int32.Parse(textBox1.Text.Trim());
-                num2 = Int32.Parse(textBox2.Text.Trim());
-                num3 = Int32.Parse(textBox3.Text.Trim());
+                num1 = float.Parse(textBox1.Text.Trim());
+                num2 = float.Parse(textBox2.Text.Trim());
+                num3 = float.Parse(textBox3.Text.Trim());
                 max_num = num1;
                 min_num = num1;
                 if (num2 > max_num) max_num = num2;
@@ -47,7 +47,7 @@ namespace Bai2
             }
             catch (FormatException)
             {
-                MessageBox.Show("Vui lòng nhập số nguyên (-_-')");
+                MessageBox.Show("Vui lòng nhập số (-_-')");
             }
         }
 
