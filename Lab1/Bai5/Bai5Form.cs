@@ -235,6 +235,12 @@ namespace Bai5
                 return;
             }
             
+            if(TienVeTam==0)
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất 1 ghế (-_-')");
+                return;
+            }
+
             string Ve = string.Join(", ", VeDat);
             
             MessageBox.Show($"Đặt vé thành công!\r\n" +
