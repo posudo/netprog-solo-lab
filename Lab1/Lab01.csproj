@@ -66,16 +66,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lab1form.cs">
+    <Compile Include="Lab01-Bai01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lab1form.Designer.cs">
-      <DependentUpon>Lab1form.cs</DependentUpon>
+    <Compile Include="Lab01-Bai01.Designer.cs">
+      <DependentUpon>Lab01-Bai01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01-Bai02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01-Bai02.Designer.cs">
+      <DependentUpon>Lab01-Bai02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01-Bai03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01-Bai03.Designer.cs">
+      <DependentUpon>Lab01-Bai03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01-Bai05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01-Bai05.Designer.cs">
+      <DependentUpon>Lab01-Bai05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01-Bai06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01-Bai06.Designer.cs">
+      <DependentUpon>Lab01-Bai06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01-Bai07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01-Bai07.Designer.cs">
+      <DependentUpon>Lab01-Bai07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01-Bai08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01-Bai08.Designer.cs">
+      <DependentUpon>Lab01-Bai08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01-Bai09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01-Bai09.Designer.cs">
+      <DependentUpon>Lab01-Bai09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab01.Designer.cs">
+      <DependentUpon>Lab01.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Lab1form.resx">
-      <DependentUpon>Lab1form.cs</DependentUpon>
+    <EmbeddedResource Include="Lab01-Bai01.resx">
+      <DependentUpon>Lab01-Bai01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01-Bai02.resx">
+      <DependentUpon>Lab01-Bai02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01-Bai03.resx">
+      <DependentUpon>Lab01-Bai03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01-Bai05.resx">
+      <DependentUpon>Lab01-Bai05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01-Bai06.resx">
+      <DependentUpon>Lab01-Bai06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01-Bai07.resx">
+      <DependentUpon>Lab01-Bai07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01-Bai08.resx">
+      <DependentUpon>Lab01-Bai08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01-Bai09.resx">
+      <DependentUpon>Lab01-Bai09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab01.resx">
+      <DependentUpon>Lab01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,40 +170,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Bai1\Bai1.csproj">
-      <Project>{9bfe44d0-9ade-4b44-afc8-8a2272471f66}</Project>
-      <Name>Bai1</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bai2\Bai2.csproj">
-      <Project>{746ea4bd-811e-4bda-8edf-d6b4de9e0d09}</Project>
-      <Name>Bai2</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bai3\Bai3.csproj">
-      <Project>{9dfda80e-29a5-423b-8438-b269da05041e}</Project>
-      <Name>Bai3</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bai5\Bai5.csproj">
-      <Project>{def0960c-54b1-45f3-9393-de3b1180f189}</Project>
-      <Name>Bai5</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bai6\Bai6.csproj">
-      <Project>{979e86f9-f050-4aef-988b-a08fd34da2b6}</Project>
-      <Name>Bai6</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bai7\Bai7.csproj">
-      <Project>{e2c2c7f7-e877-42d6-a8a6-b6c55e0d9a99}</Project>
-      <Name>Bai7</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bai8\Bai8.csproj">
-      <Project>{339a2abb-8c9c-4d39-a4e7-1159aa47ce25}</Project>
-      <Name>Bai8</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bai9\Bai9.csproj">
-      <Project>{b0afa55c-bd75-4745-b062-121e62eb1353}</Project>
-      <Name>Bai9</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

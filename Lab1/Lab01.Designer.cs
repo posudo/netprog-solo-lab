@@ -1,6 +1,6 @@
 ﻿namespace Lab1
 {
-    partial class Lab1form
+    partial class Lab01
     {
         /// <summary>
         /// Required designer variable.

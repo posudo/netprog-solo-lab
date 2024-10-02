@@ -18,9 +18,9 @@ using Bai5;
 
 namespace Lab1
 {
-    public partial class Lab1form : Form
+    public partial class Lab01 : Form
     {
-        public Lab1form()
+        public Lab01()
         {
             InitializeComponent();
         }
