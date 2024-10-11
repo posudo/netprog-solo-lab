@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,79 +21,48 @@ namespace Lab2
         {
             InitializeComponent();
         }
-        private 
+        
         private void Lab02_Bai03_Load(object sender, EventArgs e)
         {
 
         }
-
+        private List<string> results = new List<string>();
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.ShowDialog();
-            FileStream fs = new FileStream(ofd.FileName, FileMode.Open);
+            if (ofd.ShowDialog() != DialogResult.OK) return;
+            FileStream fs = new FileStream(ofd.FileName, FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
             string line;
             while ((line = sr.ReadLine()) != null)
             {
-                string[] tokens = line.Split(new char[] { ' ' },StringSplitOptions.RemoveEmptyEntries);
-                int result = EvaluateExpression(tokens);
-                textBox1.AppendText(result.ToString() + Environment.NewLine);
-
+                NCalc.Expression express = new NCalc.Expression(line);
+                object result = express.Evaluate();
+                textBox1.AppendText(line + '=' + result.ToString() + Environment.NewLine);
+                results.Add(line + '=' + result.ToString());
             }
+            sr.Close();
+            fs.Close();
         }
-        private int EvaluateExpression(string[] tokens)
-        {
-            int result = 0;
-            int index = 0;
-            char operation = '+';
-
-            foreach (string token in tokens)
-            {
-                if (token == "+")
-                {
-                    operation = '+';
-                }
-                else if (token == "-")
-                {
-                    operation = '-';
-                }
-                else if (token == "*")
-                {
-                    operation = '*';
-                }
-                else if (token == "/")
-                {
-                    operation = '/';
-                }
-                else
-                {
-                    int value = Int32.Parse(token);
-                    
-                        switch (operation)
-                        {
-                            case '+':
-                                result += value;
-                                break;
-                            case '-':
-                                result -= value;
-                                break;
-                            case '*':
-                                result *= value;
-                                break;
-                            case '/':
-                                result /= value;
-                                break;
-                        }
-                    
-                }
-                index++;
-            }
-            return result;
-        }
+        
        
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+            FileStream fs = new FileStream(sfd.FileName, FileMode.CreateNew);
+            StreamWriter sw = new StreamWriter(fs);
+            foreach(string result in results)
+            {
+                sw.WriteLine(result);
+            }
+            sw.Close();
+            fs.Close();
 
         }
     }
