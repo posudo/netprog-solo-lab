@@ -30,6 +30,8 @@ namespace Lab2
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Text files (*.txt)|*.txt";
+            ofd.DefaultExt = "txt";
             if (ofd.ShowDialog() != DialogResult.OK) return;
             FileStream fs = new FileStream(ofd.FileName, FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
@@ -54,6 +56,8 @@ namespace Lab2
         private void button2_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Text files (*.txt)|*.txt";
+            sfd.DefaultExt = "txt";
             if (sfd.ShowDialog() != DialogResult.OK) return;
             FileStream fs = new FileStream(sfd.FileName, FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
