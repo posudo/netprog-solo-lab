@@ -15,28 +15,13 @@ namespace Lab2
     public partial class Lab02_Bai06 : Form
     {
         private List<string> Foods { get; set;}
+        private string filePath;
         public Lab02_Bai06()
         {
             InitializeComponent();
-            LoadFoodsList();
+            Foods = new List<string> { "Bún riêu cua", "Bún bò", "Bún", "Phở", "Cơm", "Tôm", "Lê", "Không ăn gì hết!" };
         }
-        private void LoadFoodsList()
-        {
-            if(File.Exists("foods.txt"))
-            {
-                Foods = File.ReadAllLines("foods.txt").ToList();
-            }    
-            else
-            {
-                Foods = new List<string> { "Bún riêu cua", "Bún bò", "Bún", "Phở", "Cơm", "Tôm", "Lê", "Không ăn gì hết!"};
-                SaveFoodsList();
-            }
-            listBox1.DataSource = new BindingSource(Foods, null);
-        }
-        private void SaveFoodsList()
-        {
-            File.WriteAllLines("foods.txt", Foods);
-        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             int chon_mon = new Random().Next(0, Foods.Count);
@@ -51,7 +36,6 @@ namespace Lab2
                 return;
             }
             Foods.Add(textBox1.Text);
-            SaveFoodsList();
             ((BindingSource)listBox1.DataSource).ResetBindings(false);
         }
 
@@ -70,18 +54,58 @@ namespace Lab2
         private void button3_Click(object sender, EventArgs e)
         {
             Foods.Remove(listBox1.SelectedItem.ToString());
-            SaveFoodsList();
             ((BindingSource)listBox1.DataSource).ResetBindings(false);
         }
 
-        private void Bai9Form_Load(object sender, EventArgs e)
+        private void Lab02_Bai06_Load(object sender, EventArgs e)
         {
-            
+            listBox1.DataSource = new BindingSource(Foods, null);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Foods.Clear();
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Text files (*.txt)|*.txt";
+            ofd.DefaultExt = "txt";
+            if (ofd.ShowDialog() != DialogResult.OK) return;
+            FileStream fs = new FileStream(ofd.FileName, FileMode.OpenOrCreate);
+            StreamReader sr = new StreamReader(fs);
+            string line;
+            while ((line = sr.ReadLine()) != null)
+            {
+                Foods.Add(line);
+            }
+            filePath = ofd.FileName;
+            listBox1.DataSource = new BindingSource(Foods, null);
+            sr.Close();
+            fs.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Text files (*.txt)|*.txt";
+            sfd.DefaultExt = "txt";
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+            FileStream fs = new FileStream(sfd.FileName, FileMode.Create);
+            StreamWriter sw = new StreamWriter(fs);
+            foreach (string food in Foods)
+            {
+                sw.WriteLine(food);
+            }
+            sw.Close();
+            fs.Close();
         }
     }
 }
