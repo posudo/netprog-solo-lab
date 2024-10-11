@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lab02-Bai06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab02-Bai06.Designer.cs">
+      <DependentUpon>Lab02-Bai06.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lab02-Bai03.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Lab02-Bai06.resx">
+      <DependentUpon>Lab02-Bai06.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lab02-Bai03.resx">
       <DependentUpon>Lab02-Bai03.cs</DependentUpon>
     </EmbeddedResource>
