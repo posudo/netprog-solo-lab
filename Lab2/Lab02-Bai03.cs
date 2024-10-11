@@ -38,8 +38,8 @@ namespace Lab2
             {
                 NCalc.Expression express = new NCalc.Expression(line);
                 object result = express.Evaluate();
-                textBox1.AppendText(line + '=' + result.ToString() + Environment.NewLine);
-                results.Add(line + '=' + result.ToString());
+                textBox1.AppendText(line + " = " + result.ToString() + Environment.NewLine);
+                results.Add(line + " = " + result.ToString());
             }
             sr.Close();
             fs.Close();
@@ -55,7 +55,7 @@ namespace Lab2
         {
             SaveFileDialog sfd = new SaveFileDialog();
             if (sfd.ShowDialog() != DialogResult.OK) return;
-            FileStream fs = new FileStream(sfd.FileName, FileMode.CreateNew);
+            FileStream fs = new FileStream(sfd.FileName, FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
             foreach(string result in results)
             {
