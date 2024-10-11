@@ -8,3 +8,15 @@ E:\backup files\lap trinh mang\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
 E:\backup files\lap trinh mang\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
 E:\backup files\lap trinh mang\Lab2\obj\Debug\Lab2.exe
 E:\backup files\lap trinh mang\Lab2\obj\Debug\Lab2.pdb
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\bin\Debug\Lab2.exe.config
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\bin\Debug\Lab2.exe
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\bin\Debug\Lab2.pdb
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.exe
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.pdb
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.Lab02_Bai03.resources
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\bin\Debug\NCalc.dll
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.csproj.Up2Date
