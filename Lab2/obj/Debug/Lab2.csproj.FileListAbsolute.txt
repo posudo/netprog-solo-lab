@@ -24,3 +24,4 @@ D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\2352165
 D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.Lab02_Bai04.resources
 D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.Lab02_bai05.resources
 D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.Lab02_Bai07.resources
+D:\one for triet 2\OneDrive - MSFT\Documents\dh backup\lap trinh mang\th\23521650-DoDucMinhTriet\Lab2\obj\Debug\Lab2.Lab02.resources

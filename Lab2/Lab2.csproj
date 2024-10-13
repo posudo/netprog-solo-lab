@@ -79,6 +79,12 @@
     <Compile Include="Lab02-Bai07.Designer.cs">
       <DependentUpon>Lab02-Bai07.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab02.Designer.cs">
+      <DependentUpon>Lab02.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Lab02-Bai05.resx">
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab02-Bai07.resx">
       <DependentUpon>Lab02-Bai07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab02.resx">
+      <DependentUpon>Lab02.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
