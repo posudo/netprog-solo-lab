@@ -17,11 +17,11 @@ namespace Lab2
     
     public partial class Lab02_Bai04 : Form
     {
-        public int page;
+        private int page;
         private List<Student> students = new List<Student>();
         
         [Serializable]
-        public class Student
+        private class Student
         {
             public string FullName { get; set; }
             public int MSSV { get; set; }
