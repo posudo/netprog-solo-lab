@@ -73,6 +73,12 @@
     <Compile Include="Lab02-Bai03.Designer.cs">
       <DependentUpon>Lab02-Bai03.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab02-Bai07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab02-Bai07.Designer.cs">
+      <DependentUpon>Lab02-Bai07.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Lab02-Bai05.resx">
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab02-Bai03.resx">
       <DependentUpon>Lab02-Bai03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab02-Bai07.resx">
+      <DependentUpon>Lab02-Bai07.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="input3.txt" />
+    <Content Include="input5.txt" />
     <Content Include="input6.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
