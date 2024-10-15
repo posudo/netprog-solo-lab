@@ -80,29 +80,42 @@ namespace Lab2
         {
             TreeNode selectedNode = e.Node;
             string path = selectedNode.Tag.ToString();
-
-            if (File.Exists(path)) 
+            try
             {
-                string extension = Path.GetExtension(path).ToLower();
+                if (File.Exists(path))
+                {
+                    string extension = Path.GetExtension(path).ToLower();
 
-                if (extension == ".txt")
-                {
-                   
-                    textBox1.Text = File.ReadAllText(path);
-                    pictureBox1.Image = null;
-                    pictureBox1.Visible = false;
+                    if (extension == ".txt")
+                    {
+                        FileStream fs = new FileStream(path, FileMode.Open);
+                        StreamReader sr = new StreamReader(fs);
+                        textBox1.Text = sr.ReadToEnd();
+                        pictureBox1.Visible = false;
+                        sr.Close();
+                        fs.Close();
+                    }
+                    else if (extension == ".jpg" || extension == ".png" || extension == ".bmp" || extension == ".gif")
+                    {
+                        pictureBox1.Image = Image.FromFile(path);
+                        textBox1.Clear();
+                        pictureBox1.Visible = true;
+                    }
+                    else
+                    {
+                        textBox1.Text = "Không xem được file này (-_-')";
+                        pictureBox1.Visible = false;
+                    }
+
                 }
-                else if (extension == ".jpg" || extension == ".png" || extension == ".bmp"|| extension == ".gif")
-                {
-                    pictureBox1.Image = Image.FromFile(path);
-                    textBox1.Clear();
-                    pictureBox1.Visible = true;
-                }
-                else
-                {
-                    textBox1.Text = "Không xem được file này (-_-')";
-                    pictureBox1.Visible = false;
-                }
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show("Bạn không có quyền truy cập file này (-_-') ");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }
