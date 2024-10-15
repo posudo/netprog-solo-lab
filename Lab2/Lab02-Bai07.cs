@@ -87,14 +87,18 @@ namespace Lab2
 
                 if (extension == ".txt")
                 {
-                   
-                    textBox1.Text = File.ReadAllText(path);
-                    pictureBox1.Image = null;
+                    FileStream fs = new FileStream(path, FileMode.Open);
+                    StreamReader sr = new StreamReader(fs);
+                    textBox1.Text = sr.ReadToEnd();
                     pictureBox1.Visible = false;
+                    sr.Close();
+                    fs.Close();
                 }
                 else if (extension == ".jpg" || extension == ".png" || extension == ".bmp"|| extension == ".gif")
                 {
-                    pictureBox1.Image = Image.FromFile(path);
+                    FileStream fs = new FileStream(path, FileMode.Open);
+                    pictureBox1.Image = Image.FromStream(fs);
+                    fs.Close();
                     textBox1.Clear();
                     pictureBox1.Visible = true;
                 }
